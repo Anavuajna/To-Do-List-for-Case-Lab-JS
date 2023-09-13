@@ -38,14 +38,14 @@ h1 {
 }
 
 .inputField, .inputField:focus {
-    padding: 5px;
+    padding: 10px;
     border: 2px solid;
     border-image: linear-gradient(20deg, #53bf2d, #45b746 20%, #32ae66 40%, #249b7b 60%, #0f7790 80%, #025f9f 90%);
     border-image-slice: 1;
 }
 
 .addButton {
-    padding: 5px;
+    padding: 10px;
     border: 2px solid;
     border-image: linear-gradient(20deg, #53bf2d, #45b746 20%, #32ae66 40%, #249b7b 60%, #0f7790 80%, #025f9f 90%);
     border-image-slice: 1;
