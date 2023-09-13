@@ -1,0 +1,135 @@
+body {
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+
+h1 {
+    background: linear-gradient(135deg, #53bf2d, #45b746 20%, #32ae66 40%, #249b7b 60%, #0f7790 80%, #025f9f 90%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+
+.toDo-conteiner {
+    margin: 5px;
+}
+
+.todo-item-container {
+    display: flex;
+    margin: 10px;
+    border: 2px solid transparent;
+    border-image: linear-gradient(135deg, #53bf2d, #45b746 20%, #32ae66 40%, #249b7b 60%, #0f7790 80%, #025f9f 90%);
+    border-image-slice: 1;
+    width: 400px;
+    align-items: center;
+}
+
+#todo-text {
+    width: 100%;
+    font-size: 20px;
+    letter-spacing: 1.2px;
+    padding: 0 10px 0 10px;
+}
+
+.inputField, .inputField:focus {
+    padding: 5px;
+    border: 2px solid;
+    border-image: linear-gradient(20deg, #53bf2d, #45b746 20%, #32ae66 40%, #249b7b 60%, #0f7790 80%, #025f9f 90%);
+    border-image-slice: 1;
+}
+
+.addButton {
+    padding: 5px;
+    border: 2px solid;
+    border-image: linear-gradient(20deg, #53bf2d, #45b746 20%, #32ae66 40%, #249b7b 60%, #0f7790 80%, #025f9f 90%);
+    border-image-slice: 1;
+    background-color: transparent;
+    cursor: pointer;
+    }
+
+.btnDone, .btnDelete {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.btn {
+    margin: 20px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.btn-even, .btn-odd {
+    background: linear-gradient(20deg, #53bf2d, #45b746 20%, #32ae66 40%, #249b7b 60%, #0f7790 80%, #025f9f 90%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border: 2px solid transparent;
+    border-image: linear-gradient(135deg, #53bf2d, #45b746 20%, #32ae66 40%, #249b7b 60%, #0f7790 80%, #025f9f 90%);
+    border-image-slice: 1;
+    font-size: 18px;
+}
+
+.btn-delLast, .btn-delFirst {
+    background: linear-gradient(135deg, #c60438 30%, #e53035 60%, #fb5131 90%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border: 2px solid transparent;
+    border-image: linear-gradient(135deg, #c60438 30%, #e53035 60%, #fb5131 90%);
+    border-image-slice: 1;
+    font-size: 18px;
+}
+
+.done {
+    text-decoration: line-through  !important;
+    text-decoration-style: solid;
+    text-decoration-color: red;
+    color: #c60438;
+}
+
+.even {
+    background-color: #b0c72e71;
+    transition: 2s;
+}
+
+.odd {
+    background-color: #025fa165;
+    transition: 2s;
+}
+
+@media all and (max-width: 500px) {
+
+    .todo-item-container {
+        width: 80%;
+    }
+    #todo-text {
+        font-size: 15px;
+        letter-spacing: 1px;
+    }
+
+    .btn {
+        font-size: 15px;
+        width: 70%;
+        margin-left: -20px;
+        /* margin-left: 0; */
+    }
+}
+
+@media all and (max-width: 350px) {
+    #todo-text {
+        width: 200px;
+    }
+}
